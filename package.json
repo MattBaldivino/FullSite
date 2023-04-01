@@ -1,0 +1,14 @@
+{
+  "name": "my-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd Website && npm start\" "
+  },
+  "author": "MattBaldivino",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
