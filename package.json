@@ -10,6 +10,7 @@
 	"npm": "9.5.1",
 	"node": "18.14.2"
   },
+  "heroku-postbuild": "cd Website npm install && npm run build",
   "author": "MattBaldivino",
   "license": "ISC",
   "devDependencies": {
