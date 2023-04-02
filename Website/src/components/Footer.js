@@ -34,6 +34,7 @@ import axios from 'axios';
 							<Col>
 								<div className="contact-div">
 									<form id="contact-form">
+										<label><p>Note: Contact form is down. Will fix when school calms down.</p></label>
 
 										<label htmlFor="email"><p>Email</p></label>
 										<input required type="email" name="email" onChange={(e) => setEmail(e.target.value)}/>
