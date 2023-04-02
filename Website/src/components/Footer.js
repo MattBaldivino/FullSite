@@ -11,7 +11,7 @@ import axios from 'axios';
 		const [recipient_email, setEmail] = useState("");
 		const [subject, setSubject] = useState("");
 		const [message, setMessages] = useState("");
-		const url = "/send_email";
+		const url = "https://mattb-site.herokuapp.com/send_email";
 
 		function sendMail(){
 			if(recipient_email && subject && message){
