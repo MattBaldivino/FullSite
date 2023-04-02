@@ -14,7 +14,7 @@ import axios from 'axios';
 
 		function sendMail(){
 			if(recipient_email && subject && message){
-				axios.post("http://localhost:5000/send_email", {
+				axios.post("https://mattb-site.herokuapp.com/send_email", {
 					recipient_email,
 					subject,
 					message,
