@@ -11,10 +11,11 @@ import axios from 'axios';
 		const [recipient_email, setEmail] = useState("");
 		const [subject, setSubject] = useState("");
 		const [message, setMessages] = useState("");
+		const url = process.env.URL + "send_email"
 
 		function sendMail(){
 			if(recipient_email && subject && message){
-				axios.post(process.env.PORT || "http://localhost:3000/send_email", {
+				axios.post(url, {
 					recipient_email,
 					subject,
 					message,
