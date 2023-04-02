@@ -14,7 +14,7 @@ import axios from 'axios';
 
 		function sendMail(){
 			if(recipient_email && subject && message){
-				axios.post(process.env.PORT || "https://localhost:3000/send_email", {
+				axios.post(process.env.PORT || "http://localhost:3000/send_email", {
 					recipient_email,
 					subject,
 					message,

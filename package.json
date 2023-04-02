@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start"
+	"start": "node server.js"
   },
   "engines":{
 	"npm": "9.5.1",
 	"node": "18.14.2"
   },
-  "heroku-postbuild": "cd Website npm install && npm run build",
   "author": "MattBaldivino",
   "license": "ISC",
   "devDependencies": {
