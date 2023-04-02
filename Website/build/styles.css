@@ -1,0 +1,228 @@
+p{
+	font-size: 20px;
+	font-family: 'PT Sans', sans-serif;
+}
+table{
+	margin-top: 10px;
+	margin-right: 10px
+}
+th{
+	padding: 8px;
+}
+h1{
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 40px;
+}
+h2{
+	font-family: 'IBM Plex Mono', monospace;
+}
+h3{
+	font-family: 'IBM Plex Mono', monospace;
+}
+label{
+	display: block;
+	width: 100%;
+}
+input{
+	display: block;
+	width: 100%;
+}
+textarea{
+	display: block;
+	width: 100%;
+}
+button{
+	display: block;
+	margin-top: 500px;
+	color: black;
+	font-family: 'IBM Plex Mono', monospace;
+	border: 0;
+}
+
+
+
+
+.App{
+	background-color: #FEFFDE;
+	min-height: 100%;
+}
+.nav-text:link{
+	text-decoration: none;
+	color:antiquewhite;
+}
+.nav-text:visited{
+	text-decoration: none;
+	color:antiquewhite;
+}
+.nav-text:hover{
+	color:#fdac34;
+}
+.nav-text:active{
+	text-decoration: none;
+	color:#fdac34;
+}
+.typeWriterText {
+	font-size: 100px;
+ }
+.center-text{
+	text-align: center;
+}
+.center{
+	display: block;
+	margin-left: 10%;
+	margin-right: auto;
+	width: 100%;
+}
+.skill-title{
+	margin: 80px 0px 20px 0px;
+}
+.skill-pic{
+	margin: 80px auto 20px auto;
+	max-width: 60%;
+	height: auto;
+	border-radius: 50%;
+	border: 10px solid #FEFFDE;
+}
+.carousel .slider-wrapper{
+	width: 50%;
+}
+.carousel .thumb{
+	width: 5%;
+	height: 50px;
+}
+.carousel .control-dots{
+	margin: 60px auto;
+}
+.carousel li.slide img{
+	height: 470px;
+	width: 900px;
+	border: 30px solid #91C788;
+}
+.carousel{
+	text-align: center;
+}
+.carousel-div{
+	width: 900px;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 0;
+}
+.footer-div{
+	overflow: auto;
+	height: 100%;
+	width: 50%;
+	background-color: #52734D;
+	padding: auto 0px 0px 40px;
+	color: #FEFFDE
+}
+.contact-div{
+	margin-bottom: 40px;
+	margin-top: 40px;
+	padding: 20px;
+	color: #FEFFDE;
+}
+.footer-text{
+	margin-top: 30px;
+}
+.links{
+	max-width: 3%;
+	max-height: 3%;
+	padding: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main-slide{
+	padding-top: 30px;
+}
+#pfp{
+	max-width: 70%;
+	height: auto;
+	border-radius: 50%;
+	border: 7px solid #52734D;
+}
+#nav{
+	z-index: 9999;
+	overflow: auto;
+	margin-bottom: 30px;
+	background-color: #91C788;
+	position: sticky;
+	top: 0;
+}
+#about{
+	overflow: auto;
+	width: 100%;
+	margin-bottom: 40px;
+}
+#skills-div{
+	min-width: 100%;
+	overflow: auto;
+	background-color: #52734D;
+	padding-top: 70px;
+	color:antiquewhite;
+	padding-bottom: 40px;
+}
+#project-div{
+	min-width: 100%;
+	padding-top: 50px;
+	overflow: hidden;
+	background-color: #FEFFDE;
+	margin: 0px 0px 100px 0px;
+}
+#header{
+	margin: 0px 0px 40px 0px;
+	padding-top: 70px;
+	font-family: 'IBM Plex Mono';
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 80px;
+	overflow: auto;
+	min-width: 100%;
+}
+#name{
+	width: 50%;
+	float: left;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	color: antiquewhite;
+}
+#about-text{
+	margin-top: 50px;
+}
+#caption1{
+	background: #91C788;
+	color: black;
+	font-family: 'PT Sans', sans-serif;
+}
+#caption2{
+	background: #91C788;
+	color: black;
+	font-family: 'PT Sans', sans-serif;
+}
+#caption3{
+	background: #91C788;
+	color: black;
+	font-family: 'PT Sans', sans-serif;
+}
+#button{
+	width: 15%;
+}
+#link-div{
+	background: #FEFFDE;
+	overflow: auto;
+	height: 100%;
+	color: black;
+}
+#link-text{
+	margin-bottom: 0px;
+}
+#send{
+	max-height: 5%;
+	max-width: 5%;
+	margin-top: 10px;
+}
