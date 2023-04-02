@@ -15,6 +15,7 @@ function App() {
 				<div id="nav">
 					<div id="name">
 						<h3>Matthew Baldivino</h3>
+						<p style={{fontSize: 16}}>Note: Mobile friendly design in progress!</p>
 					</div>
 					<table align="right">
 						<tr>
