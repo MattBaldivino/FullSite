@@ -9,7 +9,7 @@ function About(){
 			<Container>
       				<Row>
         				<Col>				
-						<img id="pfp" className="center" src="https://media.licdn.com/dms/image/D5603AQEam3QFx7Ve-w/profile-displayphoto-shrink_800_800/0/1680311393029?e=1685577600&v=beta&t=Nf2eFLk4Pc5Nm5OKW0Jj4rirCYznmWh6k-UQm8cFteM"/>
+						<img id="pfp" className="center" src="https://media.licdn.com/dms/image/D5603AQEam3QFx7Ve-w/profile-displayphoto-shrink_800_800/0/1680311393029?e=2147483647&v=beta&t=KUrDQaWLAPOaeZaiTn0faqDiezzYNEnVCejhNQXje0I"/>
 					</Col>
         				<Col>
 						<div id="about-text">
