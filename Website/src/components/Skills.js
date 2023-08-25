@@ -11,9 +11,9 @@ function Skills(){
 				<Row>
 					<Col>
 						<h3 style={{fontSize: 50}} className="center-text skill-title">Java</h3>
-						<p style={{ textAlign: "left"}}>Starting in high school, I've racked up 4 years of experience in Java. This includes
-						learning object oriented programming, implementing data structures, and creating games 
-						as part of classwork and my own projects.</p>
+						<p style={{ textAlign: "left"}}>I started learning Java in high school and have used it for 5 years now.
+						Through high school and university coursework I have developed experience with Object Oriented Programming 
+						and implementing Data Structures.</p>
 					</Col>
 					<Col>
 						<img className="center skill-pic" src="https://cdn-icons-png.flaticon.com/512/1183/1183669.png"/>
@@ -25,7 +25,7 @@ function Skills(){
 					</Col>
 					<Col>
 						<h3 style={{fontSize: 50}} className="center-text skill-title">Python</h3>
-						<p style={{ textAlign: "left"}}>I have one year of experience with Python. I have learned everything I've done in Java and Python
+						<p style={{ textAlign: "left"}}>I have two years of experience with Python. I have learned everything I know in Java on Python
 						and worked on simple projects such as Pong.</p>
 					</Col>
 
@@ -33,8 +33,8 @@ function Skills(){
 				<Row>
 					<Col>
 						<h3 style={{fontSize: 50}} className="center-text skill-title">HTML, CSS, & JavaScript</h3>
-						<p style={{ textAlign: "left"}}>I have one year of experience making personal projects in HTML, CSS, & JavaScript. I have
-						an interest in fullstack web development and have worked on personal projects combining these
+						<p style={{ textAlign: "left"}}>I have one and a half years of experience making projects in HTML, CSS, & JavaScript. I have
+						an interest in full stack web development and have worked on projects combining these
 						three languages with libraries such as React and frameworks like Bootstrap.</p>
 					</Col>
 					<Col>
