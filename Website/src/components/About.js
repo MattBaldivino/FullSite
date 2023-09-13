@@ -18,7 +18,7 @@ function About(){
 							<h3 >Cal Poly Pomona, Class of 2025, Computer Science Major</h3>
 							<p></p>
 							<p>
-								I am currently learning full stack web development and have an interest in learning software development. I have a passion for programming
+								I'm currently learning full stack web development and am interested in learning software development. I have a passion for programming
 								and math.
 							</p>
 							<p>
