@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 const nodemailer = require("nodemailer");
 const app = express();
 const cors = require("cors");
@@ -6,6 +7,14 @@ require("dotenv").config();
 
 app.use(express.json());
 app.use(cors());
+
+app.use(express.static(path.join(__dirname, "/public")));
+app.use(express.json({limit: "25mb"}));
+app.use(express.urlencoded({limit: "25mb"}));
+app.use((req, res, next)=>{
+	res.setHeader("Access-Control-Allow-Origin", "*");
+	next();
+});
 	
 let transporter = nodemailer.createTransport({
 	service: "gmail",
@@ -46,7 +55,7 @@ app.post("/send", function (req, res){
 	});
 });
 
-const port = 3001;
+const port = process.env.PORT || 3001;
 app.listen(port, () => {
 	console.log(`server is running on port: ${port}`);
 });

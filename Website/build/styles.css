@@ -38,10 +38,6 @@ button{
 	font-family: 'IBM Plex Mono', monospace;
 	border: 0;
 }
-
-
-
-
 .App{
 	background-color: #FEFFDE;
 	min-height: 100%;
@@ -61,9 +57,9 @@ button{
 	text-decoration: none;
 	color:#fdac34;
 }
-.typeWriterText {
-	font-size: 100px;
- }
+.Typewriter{
+	max-width: 100%;
+}
 .center-text{
 	text-align: center;
 }
@@ -76,6 +72,9 @@ button{
 .skill-title{
 	margin: 80px 0px 20px 0px;
 }
+.skill-description{
+	display: inline;
+}
 .skill-pic{
 	margin: 80px auto 20px auto;
 	max-width: 60%;
@@ -83,31 +82,8 @@ button{
 	border-radius: 50%;
 	border: 10px solid #FEFFDE;
 }
-.carousel .slider-wrapper{
-	width: 50%;
-}
-.carousel .thumb{
-	width: 5%;
-	height: 50px;
-}
 .carousel .control-dots{
 	margin: 60px auto;
-}
-.carousel li.slide img{
-	height: 470px;
-	width: 900px;
-	border: 30px solid #91C788;
-}
-.carousel{
-	text-align: center;
-}
-.carousel-div{
-	width: 900px;
-	height: 500px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	top: 0;
 }
 .footer-div{
 	overflow: auto;
@@ -136,6 +112,8 @@ button{
 
 .main-slide{
 	padding-top: 30px;
+	max-width: 100%;
+	max-height: 100%;
 }
 #pfp{
 	max-width: 70%;
@@ -145,7 +123,7 @@ button{
 }
 #nav{
 	z-index: 9999;
-	overflow: auto;
+	overflow: hidden;
 	margin-bottom: 30px;
 	background-color: #91C788;
 	position: sticky;
@@ -170,6 +148,14 @@ button{
 	overflow: hidden;
 	background-color: #FEFFDE;
 	margin: 0px 0px 100px 0px;
+}
+#carousel-div{
+	max-width: 70%;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 0;
 }
 #header{
 	margin: 0px 0px 40px 0px;
@@ -225,4 +211,215 @@ button{
 	max-height: 5%;
 	max-width: 5%;
 	margin-top: 10px;
+}
+/*phone view*/
+@media screen and (min-width: 0px){
+	#header {
+		text-align: center;
+		font-size: 55px;
+	}
+	.skill-description{
+		display: none;
+	}
+	.row{
+		justify-content: center;
+	}
+	.carousel .slider-wrapper{
+		max-height: 300px;
+		width: 50%;
+		text-align: center;
+	}
+	.slider{
+		max-height: 300px;
+		width: 50%;
+	}
+	.carousel li.slide img{
+		height: 60%;
+		width: 100%;
+		object-fit: fill;
+	}
+	#about{
+		flex-direction: column;
+	}
+	#carousel-div{
+		max-width: 90%;
+		height: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		top: 0;
+	}
+	.carousel li.slide #caption1, #caption2, #caption3{
+		font-size: 8px;
+	}
+}
+/*tablet view*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	.typeWriterText {
+		font-size: 10px;
+	}
+	.skill-description{
+		display: inline;
+	}
+	.carousel .slider-wrapper{
+		max-height: 500px;
+		width: 50%;
+		text-align: center;
+	}
+	.slider{
+		max-height: 500px;
+		width: 50%;
+	}
+	.carousel li.slide img{
+		height: 60%;
+		width: 100%;
+		object-fit: fill;
+	}
+	#about{
+		flex-direction: column;
+	}
+	#carousel-div{
+		max-width: 90%;
+		height: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		top: 0;
+	}
+	.carousel li.slide #caption1, #caption2, #caption3{
+		font-size: 12px;
+	}
+}
+/*desktop view*/
+@media screen and (min-width: 1024px){
+	.skill-description{
+		display: inline;
+	}
+	.row{
+		justify-content: center;
+	}
+	.carousel .slider-wrapper{
+		max-height: 450px;
+		width: 50%;
+		text-align: center;
+	}
+	.slider{
+		max-height: 450px;
+		width: 50%;
+	}
+	.carousel-img{
+		height: 100%;
+		width: 100%;
+	}
+	.carousel li.slide{
+		text-align: center;
+		justify-content: center;
+	}
+	.carousel li.slide img{
+		height: 100%;
+		width: 100%;
+		object-fit: fill;
+	}
+	
+	#about{
+		flex-direction: column;
+	}
+	#carousel-div{
+		max-width: 75%;
+		height: 450px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		top: 0;
+	}
+	.carousel li.slide #caption1, #caption2, #caption3{
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 1440px){
+	.skill-description{
+		display: inline;
+	}
+	.row{
+		justify-content: center;
+	}
+	.carousel .slider-wrapper{
+		max-height: 700px;
+		width: 50%;
+		text-align: center;
+	}
+	.slider{
+		max-height: 700px;
+		width: 50%;
+	}
+	.carousel li.slide{
+		text-align: center;
+		justify-content: center;
+	}
+	.carousel-img{
+		height: 100%;
+		width: 100%;
+	}
+	.carousel li.slide img{
+		height: 100%;
+		width: 100%;
+		object-fit: fill;
+	}
+	#about{
+		flex-direction: column;
+	}
+	#carousel-div{
+		max-width: 90%;
+		height: 700px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		top: 0;
+	}
+	.carousel li.slide #caption1, #caption2, #caption3{
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 2560px){
+	.skill-description{
+		display: inline;
+	}
+	.row{
+		justify-content: center;
+	}
+	.carousel .slider-wrapper{
+		max-height: 1000px;
+		width: 50%;
+		text-align: center;
+	}
+	.slider{
+		max-height: 1000px;
+		width: 50%;
+	}
+	.carousel li.slide{
+		text-align: center;
+		justify-content: center;
+	}
+	.carousel li.slide img{
+		height: 100%;
+		width: 100%;
+	}
+	.carousel li.slide #caption1, #caption2, #caption3{
+	}
+	#about{
+		flex-direction: column;
+	}
+	#carousel-div{
+		max-width: 90%;
+		height: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		top: 0;
+	}
+	.carousel li.slide #caption1, #caption2, #caption3{
+		font-size: 24px;
+	}
 }
