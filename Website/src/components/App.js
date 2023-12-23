@@ -5,7 +5,37 @@ import Body from "./Body";
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 
-
+function navDisplay(){
+	var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+	if(viewportWidth > 767){
+		return(
+			<table align="right">
+				<tr>
+					<th>
+						<Link style={{fontFamily: 'IBM Plex Mono'}} className="nav-text " to="#header" smooth>
+							About
+						</Link>
+					</th>
+					<th>
+						<Link style={{fontFamily: 'IBM Plex Mono'}} className="nav-text" to="#skills-div" smooth>
+								Skills
+							</Link>
+					</th>
+					<th>
+						<Link style={{fontFamily: 'IBM Plex Mono'}} className="nav-text" to="#project-div" smooth>
+							Projects
+						</Link>
+					</th>
+					<th>
+						<Link style={{fontFamily: 'IBM Plex Mono'}} className="nav-text" to="#contact" smooth>
+							Contact
+						</Link>
+					</th>
+				</tr>
+			</table>
+		)
+	}
+}
 
 function App() {
 	return(
@@ -15,32 +45,8 @@ function App() {
 				<div id="nav">
 					<div id="name">
 						<h3>Matthew Baldivino</h3>
-						<p style={{fontSize: 16}}>Note: Mobile friendly design in progress!</p>
 					</div>
-					<table align="right">
-						<tr>
-							<th>
-								<Link style={{fontFamily: 'IBM Plex Mono'}} className="nav-text " to="#header" smooth>
-									About
-								</Link>
-							</th>
-							<th>
-								<Link style={{fontFamily: 'IBM Plex Mono'}} className="nav-text" to="#skills-div" smooth>
-									Skills
-								</Link>
-							</th>
-							<th>
-								<Link style={{fontFamily: 'IBM Plex Mono'}} className="nav-text" to="#project-div" smooth>
-									Projects
-								</Link>
-							</th>
-							<th>
-								<Link style={{fontFamily: 'IBM Plex Mono'}} className="nav-text" to="#contact" smooth>
-									Contact
-								</Link>
-							</th>
-						</tr>
-					</table>
+					{navDisplay()}
 				</div>
 				
 				<Header />

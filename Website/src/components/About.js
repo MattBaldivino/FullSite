@@ -7,29 +7,25 @@ function About(){
 	return(
 		<div className="p-3 h-auto d-inline-block" id="about">
 			<Container>
-      				<Row>
-        				<Col>				
+      			<Row>
+        			<Col sm={12} md={6}>				
 						<img id="pfp" className="center" src="https://media.licdn.com/dms/image/D5603AQEam3QFx7Ve-w/profile-displayphoto-shrink_800_800/0/1680311393029?e=2147483647&v=beta&t=KUrDQaWLAPOaeZaiTn0faqDiezzYNEnVCejhNQXje0I"/>
 					</Col>
-        				<Col>
+        			<Col sm={12} md={6}>
 						<div id="about-text">
 							<h2 >Matthew Baldivino</h2>
-							<p></p>
+							<br></br>
 							<h3 >Cal Poly Pomona, Class of 2025, Computer Science Major</h3>
-							<p></p>
+							<br></br>
 							<p>
-								I'm currently learning full stack web development and am interested in learning software development. I have a passion for programming
-								and math.
+								Aspiring web developer and software engineer. I am currently an Assistant Center
+								Director at a Mathnasium Learning Center. On campus I am the president of Bronco
+								Table Tennis.
 							</p>
-							<p>
-								Away from the keyboard, my interests include table tennis, weightlifting, and music. On campus I am the president of
-								Bronco Table Tennis, and a member of Students With An Interest In Future of Technology(SWIFT) and Bronco Lifting.
-							</p>
-						</div>
-						
+						</div>	
 					</Col>
-      				</Row>
-    			</Container>
+      			</Row>
+    		</Container>
 		</div>
 	)
 }
