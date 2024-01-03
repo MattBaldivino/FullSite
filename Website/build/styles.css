@@ -1,5 +1,4 @@
 p{
-	font-size: 20px;
 	font-family: 'PT Sans', sans-serif;
 }
 table{
@@ -42,6 +41,11 @@ button{
 	background-color: #FEFFDE;
 	min-height: 100%;
 }
+.nav-text{
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
 .nav-text:link{
 	text-decoration: none;
 	color:antiquewhite;
@@ -60,14 +64,15 @@ button{
 .Typewriter{
 	max-width: 100%;
 }
-.center-text{
+.about-contents .row{
 	text-align: center;
+	justify-content: center;
+	align-items: center;
 }
 .center{
-	display: block;
-	margin-left: 10%;
-	margin-right: auto;
 	width: 100%;
+	margin: auto;
+	display: block;
 }
 .skill-title{
 	margin: 80px 0px 20px 0px;
@@ -94,9 +99,6 @@ button{
 	color: #FEFFDE
 }
 .contact-div{
-	margin-bottom: 40px;
-	margin-top: 40px;
-	padding: 20px;
 	color: #FEFFDE;
 }
 .footer-text{
@@ -122,32 +124,35 @@ button{
 	border: 7px solid #52734D;
 }
 #nav{
-	z-index: 9999;
 	overflow: hidden;
-	margin-bottom: 30px;
 	background-color: #91C788;
 	position: sticky;
 	top: 0;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	z-index: 1;
+}
+#nav-div{
+	width: 50%;
+	text-align: right;
+	margin: 10px 10px 13px 10px;
+	padding: 1px 0;
 }
 #about{
 	overflow: auto;
 	width: 100%;
-	margin-bottom: 40px;
 }
 #skills-div{
 	min-width: 100%;
 	overflow: auto;
 	background-color: #52734D;
-	padding-top: 70px;
 	color:antiquewhite;
-	padding-bottom: 40px;
 }
 #project-div{
 	min-width: 100%;
-	padding-top: 50px;
 	overflow: hidden;
 	background-color: #FEFFDE;
-	margin: 0px 0px 100px 0px;
 }
 #carousel-div{
 	max-width: 70%;
@@ -158,8 +163,6 @@ button{
 	top: 0;
 }
 #header{
-	margin: 0px 0px 40px 0px;
-	padding-top: 70px;
 	font-family: 'IBM Plex Mono';
 	text-align: center;
 	display: flex;
@@ -176,6 +179,10 @@ button{
 	margin-right: 10px;
 	margin-left: 10px;
 	color: antiquewhite;
+	padding: 1px 0;
+}
+#name h3{
+	margin-bottom: -8px;
 }
 #about-text{
 	margin-top: 50px;
@@ -214,15 +221,18 @@ button{
 }
 /*phone view*/
 @media screen and (min-width: 0px){
-	#header {
-		text-align: center;
-		font-size: 55px;
+	.nav-text{
+		font-size: 9px;
 	}
 	.skill-description{
 		display: none;
 	}
 	.row{
 		justify-content: center;
+	}
+	.center-text{
+		text-align: center;
+		font-size: 45px;
 	}
 	.carousel .slider-wrapper{
 		max-height: 300px;
@@ -238,8 +248,49 @@ button{
 		width: 100%;
 		object-fit: fill;
 	}
+	.nav-text{
+		font-size: 9px;
+	}
+	.contact-div p{
+		font-size: 13px;
+	}
+	.links{
+		max-width: 5%;
+		max-height: 5%;
+	}
+	#header{
+		padding-top: 50px;
+		padding-bottom: 20px;
+	}
 	#about{
 		flex-direction: column;
+		margin-bottom: 20px;
+	}
+	#skills-div{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#project-div{
+		padding-top: 20px;
+		margin-bottom: 20px;
+	}
+	#contact{
+		padding-top: 20px;
+	}
+	#contact .container{
+		padding-bottom: 20px;
+	}
+	#link-text{
+		font-size: 6px;
+	}
+	#about-text p{
+		font-size: 13px;
+	}
+	#about-text, .contact-div h2{
+		font-size: 19px;
+	}
+	#about-text h3{
+		font-size: 16px;
 	}
 	#carousel-div{
 		max-width: 90%;
@@ -249,14 +300,22 @@ button{
 		position: relative;
 		top: 0;
 	}
+	#name h3, #name #nav-div{
+		font-size: 9px;
+		padding: 5px 0;
+	}
+	#header {
+		text-align: center;
+		font-size: 35px;
+	}
 	.carousel li.slide #caption1, #caption2, #caption3{
 		font-size: 8px;
 	}
 }
 /*tablet view*/
 @media screen and (min-width: 768px) and (max-width: 1023px){
-	.typeWriterText {
-		font-size: 10px;
+	.nav-text{
+		font-size: 12px;
 	}
 	.skill-description{
 		display: inline;
@@ -265,6 +324,10 @@ button{
 		max-height: 500px;
 		width: 50%;
 		text-align: center;
+	}
+	.center-text{
+		text-align: center;
+		font-size: 60px;
 	}
 	.slider{
 		max-height: 500px;
@@ -275,8 +338,46 @@ button{
 		width: 100%;
 		object-fit: fill;
 	}
+	.contact-div p{
+		font-size: 16px;
+	}
+	.links{
+		max-width: 2%;
+		max-height: 2%;
+	}
+	#header{
+		padding-top: 70px;
+		padding-bottom: 40px;
+	}
 	#about{
 		flex-direction: column;
+		margin-bottom: 40px;
+	}
+	#skills-div{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	#project-div{
+		padding-top: 40px;
+		margin-bottom: 40px;
+	}
+	#contact{
+		padding-top: 40px;
+	}
+	#contact .container{
+		padding-bottom: 40px;
+	}
+	#link-text{
+		font-size: 8px;
+	}
+	#about-text p{
+		font-size: 16px;
+	}
+	#about-text, .contact-div h2{
+		font-size: 28.1px;
+	}
+	#about-text h3{
+		font-size: 25.4px;
 	}
 	#carousel-div{
 		max-width: 90%;
@@ -286,17 +387,34 @@ button{
 		position: relative;
 		top: 0;
 	}
+	#name h3, #name #nav-div{
+		font-size: 12px;
+	}
+	#header {
+		text-align: center;
+		font-size: 45px;
+	}
+	#skills-div h3{
+		font-size: 40px;
+	}
 	.carousel li.slide #caption1, #caption2, #caption3{
 		font-size: 12px;
 	}
 }
 /*desktop view*/
 @media screen and (min-width: 1024px){
+	.nav-text{
+		font-size: 16px;
+	}
 	.skill-description{
 		display: inline;
 	}
 	.row{
 		justify-content: center;
+	}
+	.center-text{
+		text-align: center;
+		font-size: 100px;
 	}
 	.carousel .slider-wrapper{
 		max-height: 450px;
@@ -320,9 +438,46 @@ button{
 		width: 100%;
 		object-fit: fill;
 	}
-	
+	.contact-div p{
+		font-size: 24px;
+	}
+	.links{
+		max-width: 2%;
+		max-height: 2%;
+	}
+	#header{
+		padding-top: 70px;
+		padding-bottom: 40px;
+	}
 	#about{
 		flex-direction: column;
+		margin-bottom: 80px;
+	}
+	#skills-div{
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	#project-div{
+		padding-top: 80px;
+		margin-bottom: 120px;
+	}
+	#contact{
+		padding-top: 80px;
+	}
+	#contact .container{
+		padding-bottom: 80px;
+	}
+	#link-text{
+		font-size: 12px;
+	}
+	#about-text	p{
+		font-size: 24px;
+	}
+	#about-text, .contact-div h2{
+		font-size: 30.5px;
+	}
+	#about-text h3{
+		font-size: 27px;
 	}
 	#carousel-div{
 		max-width: 75%;
@@ -332,12 +487,28 @@ button{
 		position: relative;
 		top: 0;
 	}
+	#name h3{
+		font-size: 16px;
+	}
+	#header {
+		text-align: center;
+		font-size: 85px;
+	}
+	#skills-div h3{
+		font-size: 50px;
+	}
+	#skills-div p{
+		font-size: 24px;
+	}
 	.carousel li.slide #caption1, #caption2, #caption3{
 		font-size: 14px;
 	}
 }
 
 @media screen and (min-width: 1440px){
+	.nav-text{
+		font-size: 18px;
+	}
 	.skill-description{
 		display: inline;
 	}
@@ -366,8 +537,14 @@ button{
 		width: 100%;
 		object-fit: fill;
 	}
+	.contact-div p{
+		font-size: 25px;
+	}
 	#about{
 		flex-direction: column;
+	}
+	#about-text p{
+		font-size: 25px;
 	}
 	#carousel-div{
 		max-width: 90%;
@@ -377,12 +554,24 @@ button{
 		position: relative;
 		top: 0;
 	}
+	#name h3{
+		font-size: 18px;
+	}
+	#skills-div h3{
+		font-size: 80px;
+	}
+	#skills-div p{
+		font-size: 25px;
+	}
 	.carousel li.slide #caption1, #caption2, #caption3{
 		font-size: 16px;
 	}
 }
 
 @media screen and (min-width: 2560px){
+	.nav-text{
+		font-size: 20px;
+	}
 	.skill-description{
 		display: inline;
 	}
@@ -405,8 +594,6 @@ button{
 	.carousel li.slide img{
 		height: 100%;
 		width: 100%;
-	}
-	.carousel li.slide #caption1, #caption2, #caption3{
 	}
 	#about{
 		flex-direction: column;
@@ -418,6 +605,9 @@ button{
 		margin-right: auto;
 		position: relative;
 		top: 0;
+	}
+	#name h3{
+		font-size: 20px;
 	}
 	.carousel li.slide #caption1, #caption2, #caption3{
 		font-size: 24px;

@@ -46,40 +46,39 @@ import Col from 'react-bootstrap/Col';
 		  };
 		return(
 			<div className="h-auto w-100 d-inline-block footer-div" id="contact">
-				<h1 style={{fontSize: 100, padding: 70}} className="Contact center-text">Contact Me</h1>
+				<h1 className="Contact center-text">Contact Me</h1>
 				<Container>
 					<Row>
-						<Col>
+						<Col xs={12} sm={12} md={6}>
+							<div className="contact-div">
+								<h2>My Contacts</h2>
+								<p>Work Email: matt.a.baldivino@gmail.com</p>
+								<p>School Email: mabaldivino@cpp.edu</p>
+							</div>
+						</Col>
+						<Col xs={12} sm={12} md={6}>
 							<div className="contact-div">
 								<form id="contact-form" onSubmit={submitEmail}>
-									<label htmlFor="Name"><p>Name</p></label>
+									<label htmlFor="Name"><h2>Name</h2></label>
 									<input required type="text" placeholder="Name" name="name" onChange={handleStateChange} value={mailerState.name}/>
-
-									<label htmlFor="Email"><p>Email</p></label>
+									<br></br>
+									<label htmlFor="Email"><h2>Email</h2></label>
 									<input required type="email" placeholder="Email" name="email" onChange={handleStateChange} value={mailerState.email}/>
-									
-									<label htmlFor="message"><p>Message</p></label>
+									<br></br>
+									<label htmlFor="message"><h2>Message</h2></label>
 									<textarea  required placeholder="Message" name="message" onChange={handleStateChange} value={mailerState.message}></textarea>
 									
 									<button style={{marginTop: 20}} className="primary-btn submit">Submit</button>
 								</form>
 							</div>
 						</Col>
-						<Col>
-							<div className="contact-div">
-								<h3>My Contacts</h3>
-								<p>Work Email: matt.a.baldivino@gmail.com</p>
-								<p>School Email: mabaldivino@cpp.edu</p>
-							</div>
-						</Col>
 					</Row>
 				</Container>
 				<div id="link-div">
-					<p id="link-text" style={{padding: 25, fontSize: 14, verticalAlign: 'middle'}} className="center-text">
-						Copyright © Matthew Baldivino
+					<p id="link-text" style={{verticalAlign: 'middle'}} className="center-text">
+						Copyright © Matthew Baldivino	
 						<a href="https://www.linkedin.com/in/matthew-baldivino123"><img style={{marginLeft: 10}}className="links" src="https://cdn-icons-png.flaticon.com/512/145/145807.png"/></a>
-						<a href="https://github.com/MattBaldivino"><img className="links" src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png"/></a>
-							
+						<a href="https://github.com/MattBaldivino"><img className="links" src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png"/></a>						
 					</p>
 				</div>
 			</div>

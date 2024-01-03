@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 function About(){
 	return(
 		<div className="p-3 h-auto d-inline-block" id="about">
-			<Container>
+			<Container className="about-contents">
       			<Row>
         			<Col sm={12} md={6}>				
 						<img id="pfp" className="center" src="https://media.licdn.com/dms/image/D5603AQEam3QFx7Ve-w/profile-displayphoto-shrink_800_800/0/1680311393029?e=2147483647&v=beta&t=KUrDQaWLAPOaeZaiTn0faqDiezzYNEnVCejhNQXje0I"/>
