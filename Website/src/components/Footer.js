@@ -46,7 +46,7 @@ import Col from 'react-bootstrap/Col';
 		  };
 		return(
 			<div className="h-auto w-100 d-inline-block footer-div" id="contact">
-				<h1 className="Contact center-text">Contact Me</h1>
+				<h1 className="center-text">Contact Me</h1>
 				<Container>
 					<Row>
 						<Col xs={12} sm={12} md={6}>
