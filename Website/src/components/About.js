@@ -20,7 +20,7 @@ function About(){
 							<p>
 								Aspiring web developer and software engineer. I am currently an Assistant Center
 								Director at a Mathnasium Learning Center. On campus I am the president of Bronco
-								Table Tennis.
+								Table Tennis and a member of Students With an Interest in the Future of Technology(SWIFT).
 							</p>
 						</div>	
 					</Col>

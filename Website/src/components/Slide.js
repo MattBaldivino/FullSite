@@ -1,6 +1,9 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import screenshot from "./site.png";
+import rover from "./rover.png";
+import mathnasium from "./mathnasium.jpg";
 
 function Slide() {
   return (
@@ -8,16 +11,16 @@ function Slide() {
 		<Carousel className="main-slide" infiniteLoop={true} showThumbs={false} showStatus={false}
 		showArrows={false} autoPlay={true} stopOnHover={false} interval={5000} showIndicators={false}>
 			<div className="carousel-img">
-		    	<a href="https://www.broncospace.com/bill-ee-ai-rover"><img src="https://static.wixstatic.com/media/366a2e_32f7b7c098e84153ae1719a77eb53df1~mv2.png/v1/fill/w_672,h_453,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image.png" /></a>
+		    	<a target="_blank" href="https://www.broncospace.com/bill-ee-ai-rover"><img src={rover} /></a>
 				<p id="caption1" className="legend">BILLEE: Worked on autonomous movement and camera vision using ROS, XML, and Python.</p>
 			</div>
 			<div className="carousel-img">
-		    	<a href="https://github.com/MattBaldivino/marketing_project"><img src="https://www.wafj.com/sites/wafj/images/partners/mathnasium_400x300.jpg" /></a>
-				<p id="caption1" className="legend">Mathnasium: Created a program to filter through inactive accounts for a marketing campaign using Python and Pandas.</p>
+		    	<a target="_blank" href="https://mb-sentiment-analysis.onrender.com/"><img src={screenshot} alt="website-screenshot"/></a>
+				<p id="caption1" className="legend">Developed a full stack site using React, Flask, MySQL, and AWS Lambda to perform sentiment analysis.</p>
 			</div>
 			<div className="carousel-img">
-		    	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEVTc05c9uuRAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" />
-				<p id="caption1" className="legend">Coming Soon(I am a busy student)</p>
+		    	<a target="_blank" href="https://github.com/MattBaldivino/marketing_project"><img src={mathnasium} /></a>
+				<p id="caption1" className="legend">Mathnasium: Created a program to filter through inactive accounts for a marketing campaign using Python and Pandas.</p>
 			</div>
    		</Carousel>
 	</div>

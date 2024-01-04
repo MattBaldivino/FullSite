@@ -8,16 +8,16 @@ import { HashLink as Link } from "react-router-hash-link";
 function navDisplay(){
 	return(
 		<div id="nav-div">
-			<Link style={{fontFamily: 'IBM Plex Mono'}} className="nav-text " to="#header" smooth>
+			<Link className="nav-text " to="#header" smooth>
 				About
 			</Link>
-			<Link style={{fontFamily: 'IBM Plex Mono'}} className="nav-text" to="#skills-div" smooth>
+			<Link className="nav-text" to="#skills-div" smooth>
 				Skills
 			</Link>
-			<Link style={{fontFamily: 'IBM Plex Mono'}} className="nav-text" to="#project-div" smooth>
+			<Link className="nav-text" to="#project-div" smooth>
 				Projects
 			</Link>
-			<Link style={{fontFamily: 'IBM Plex Mono'}} className="nav-text" to="#contact" smooth>
+			<Link className="nav-text" to="#contact" smooth>
 				Contact
 			</Link>
 		</div>

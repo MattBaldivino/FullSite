@@ -59,13 +59,13 @@ import Col from 'react-bootstrap/Col';
 						<Col xs={12} sm={12} md={6}>
 							<div className="contact-div">
 								<form id="contact-form" onSubmit={submitEmail}>
-									<label htmlFor="Name"><h2>Name</h2></label>
+									<label><h2>Name</h2></label>
 									<input required type="text" placeholder="Name" name="name" onChange={handleStateChange} value={mailerState.name}/>
 									<br></br>
-									<label htmlFor="Email"><h2>Email</h2></label>
+									<label><h2>Email</h2></label>
 									<input required type="email" placeholder="Email" name="email" onChange={handleStateChange} value={mailerState.email}/>
 									<br></br>
-									<label htmlFor="message"><h2>Message</h2></label>
+									<label><h2>Message</h2></label>
 									<textarea  required placeholder="Message" name="message" onChange={handleStateChange} value={mailerState.message}></textarea>
 									
 									<button style={{marginTop: 20}} className="primary-btn submit">Submit</button>

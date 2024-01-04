@@ -1,5 +1,5 @@
 p{
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 }
 table{
 	margin-top: 10px;
@@ -9,14 +9,14 @@ th{
 	padding: 8px;
 }
 h1{
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: 'Yeseva One', serif;
 	font-size: 40px;
 }
 h2{
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: 'Yeseva One', serif;
 }
 h3{
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: 'Yeseva One', serif;
 }
 label{
 	display: block;
@@ -30,16 +30,10 @@ textarea{
 	display: block;
 	width: 100%;
 }
-button{
-	display: block;
-	margin-top: 500px;
-	color: black;
-	font-family: 'IBM Plex Mono', monospace;
-	border: 0;
-}
 .App{
-	background-color: #FEFFDE;
+	background-color: #fefcf6;
 	min-height: 100%;
+	color: #162a2c;
 }
 .nav-text{
 	padding-bottom: 5px;
@@ -48,18 +42,19 @@ button{
 }
 .nav-text:link{
 	text-decoration: none;
-	color:antiquewhite;
+	color:#fefcf6;
 }
 .nav-text:visited{
 	text-decoration: none;
-	color:antiquewhite;
+	color: #fefcf6;
 }
 .nav-text:hover{
-	color:#fdac34;
+	color:#d6e0e2;
+	text-decoration: line-through;
 }
 .nav-text:active{
-	text-decoration: none;
-	color:#fdac34;
+	text-decoration: line-through;
+	color:#d6e0e2;
 }
 .Typewriter{
 	max-width: 100%;
@@ -85,21 +80,25 @@ button{
 	max-width: 60%;
 	height: auto;
 	border-radius: 50%;
-	border: 10px solid #FEFFDE;
+	border: 10px solid #fefcf6;
 }
 .carousel .control-dots{
 	margin: 60px auto;
+}
+.carousel-img a{
+	display: block;
+	max-height: 100%;
 }
 .footer-div{
 	overflow: auto;
 	height: 100%;
 	width: 50%;
-	background-color: #52734D;
+	background-color: #5e6c5b;
 	padding: auto 0px 0px 40px;
-	color: #FEFFDE
+	color: #fefcf6
 }
 .contact-div{
-	color: #FEFFDE;
+	color: #fefcf6;
 }
 .footer-text{
 	margin-top: 30px;
@@ -117,15 +116,22 @@ button{
 	max-width: 100%;
 	max-height: 100%;
 }
+#contact .contact-div button{
+	font-family: 'Josefin Sans', sans-serif;
+	display: block;
+	color: #162a2c;
+	border: 0px;
+	border-radius: 16px;
+}
 #pfp{
 	max-width: 70%;
 	height: auto;
 	border-radius: 50%;
-	border: 7px solid #52734D;
+	border: 3px solid #5e6c5b;
 }
 #nav{
 	overflow: hidden;
-	background-color: #91C788;
+	background-color: #162a2c;
 	position: sticky;
 	top: 0;
 	display: flex;
@@ -139,6 +145,9 @@ button{
 	margin: 10px 10px 13px 10px;
 	padding: 1px 0;
 }
+#nav-div{
+	font-family: 'Josefin Sans', sans-serif;
+}
 #about{
 	overflow: auto;
 	width: 100%;
@@ -146,13 +155,13 @@ button{
 #skills-div{
 	min-width: 100%;
 	overflow: auto;
-	background-color: #52734D;
-	color:antiquewhite;
+	background-color: #5e6c5b;
+	color:#fefcf6;
 }
 #project-div{
 	min-width: 100%;
 	overflow: hidden;
-	background-color: #FEFFDE;
+	background-color: #fefcf6;
 }
 #carousel-div{
 	max-width: 70%;
@@ -163,12 +172,11 @@ button{
 	top: 0;
 }
 #header{
-	font-family: 'IBM Plex Mono';
+	font-family: 'Yeseva One', serif;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 80px;
 	overflow: auto;
 	min-width: 100%;
 }
@@ -178,38 +186,43 @@ button{
 	margin-top: 10px;
 	margin-right: 10px;
 	margin-left: 10px;
-	color: antiquewhite;
+	color: #fefcf6;
 	padding: 1px 0;
+}
+#name h3{
+	font-family: 'Yeseva One', serif;
+	font-weight: 300;
 }
 #name h3{
 	margin-bottom: -8px;
 }
 #about-text{
 	margin-top: 50px;
+	text-align: left;
 }
 #caption1{
-	background: #91C788;
-	color: black;
-	font-family: 'PT Sans', sans-serif;
+	background: #5e6c5b;
+	color: #fefcf6;
+	font-family: 'Josefin Sans', sans-serif;
 }
 #caption2{
-	background: #91C788;
-	color: black;
-	font-family: 'PT Sans', sans-serif;
+	background: #5e6c5b;
+	color: #fefcf6;
+	font-family: 'Josefin Sans', sans-serif;
 }
 #caption3{
-	background: #91C788;
-	color: black;
-	font-family: 'PT Sans', sans-serif;
+	background: #5e6c5b;
+	color: #fefcf6;
+	font-family: 'Josefin Sans', sans-serif;
 }
 #button{
 	width: 15%;
 }
 #link-div{
-	background: #FEFFDE;
+	background: #fefcf6;
 	overflow: auto;
 	height: 100%;
-	color: black;
+	color: #162a2c;
 }
 #link-text{
 	margin-bottom: 0px;
@@ -244,7 +257,7 @@ button{
 		width: 50%;
 	}
 	.carousel li.slide img{
-		height: 60%;
+		height: 100%;
 		width: 100%;
 		object-fit: fill;
 	}
@@ -264,21 +277,21 @@ button{
 	}
 	#about{
 		flex-direction: column;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 	}
 	#skills-div{
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 	#project-div{
-		padding-top: 20px;
-		margin-bottom: 20px;
+		padding-top: 40px;
+		margin-bottom: 40px;
 	}
 	#contact{
-		padding-top: 20px;
+		padding-top: 40px;
 	}
 	#contact .container{
-		padding-bottom: 20px;
+		padding-bottom: 40px;
 	}
 	#link-text{
 		font-size: 6px;
@@ -330,11 +343,11 @@ button{
 		font-size: 60px;
 	}
 	.slider{
-		max-height: 500px;
+		max-height: 400px;
 		width: 50%;
 	}
 	.carousel li.slide img{
-		height: 60%;
+		height: 100%;
 		width: 100%;
 		object-fit: fill;
 	}
@@ -424,10 +437,6 @@ button{
 	.slider{
 		max-height: 450px;
 		width: 50%;
-	}
-	.carousel-img{
-		height: 100%;
-		width: 100%;
 	}
 	.carousel li.slide{
 		text-align: center;
