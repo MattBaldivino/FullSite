@@ -46,17 +46,22 @@ import Col from 'react-bootstrap/Col';
 		  };
 		return(
 			<div className="h-auto w-100 d-inline-block footer-div" id="contact">
-				<h1 className="center-text">Contact Me</h1>
 				<Container>
-					<Row>
+					<Row className="align-items-center">
 						<Col xs={12} sm={12} md={6}>
 							<div className="contact-div">
-								<h2>My Contacts</h2>
-								<p>Work Email: matt.a.baldivino@gmail.com</p>
-								<p>School Email: mabaldivino@cpp.edu</p>
+								<h1 id="contact-me">Contact Me!</h1>
 							</div>
 						</Col>
 						<Col xs={12} sm={12} md={6}>
+							<div className="contact-div">
+								<h2>My Contacts</h2>
+								<p>Work Email: <a className="contact-links" href="mailto:matt.a.baldivino@gmail.com">matt.a.baldivino@gmail.com</a></p>
+								<p>School Email: <a className="contact-links" href="mailto:mabaldivino@cpp.edu">mabaldivino@cpp.edu</a></p>
+								<p><a className="contact-links" href="https://www.linkedin.com/in/matthew-baldivino123">LinkedIn</a></p>
+							</div>
+						</Col>
+						{/*<Col xs={12} sm={12} md={6}>
 							<div className="contact-div">
 								<form id="contact-form" onSubmit={submitEmail}>
 									<label><h2>Name</h2></label>
@@ -70,15 +75,14 @@ import Col from 'react-bootstrap/Col';
 									
 									<button style={{marginTop: 20}} className="primary-btn submit">Submit</button>
 								</form>
-							</div>
-						</Col>
+							</div>							
+						</Col>*/}
 					</Row>
 				</Container>
 				<div id="link-div">
 					<p id="link-text" style={{verticalAlign: 'middle'}} className="center-text">
 						Copyright © Matthew Baldivino	
-						<a href="https://www.linkedin.com/in/matthew-baldivino123"><img style={{marginLeft: 10}}className="links" src="https://cdn-icons-png.flaticon.com/512/145/145807.png"/></a>
-						<a href="https://github.com/MattBaldivino"><img className="links" src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png"/></a>						
+						<a href="https://github.com/MattBaldivino"><img style={{marginLeft: 10}} className="links" src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png"/></a>						
 					</p>
 				</div>
 			</div>
