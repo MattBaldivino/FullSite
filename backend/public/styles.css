@@ -296,6 +296,7 @@ textarea{
 	}
 	#contact{
 		padding-top: 40px;
+		text-align: center;
 	}
 	#contact .container{
 		padding-bottom: 40px;
@@ -389,6 +390,7 @@ textarea{
 	}
 	#contact .container{
 		padding-bottom: 40px;
+		text-align: left;
 	}
 	#link-text{
 		font-size: 8px;
@@ -485,6 +487,7 @@ textarea{
 	}
 	#contact{
 		padding-top: 80px;
+		text-align: left;
 	}
 	#contact .container{
 		padding-bottom: 80px;
@@ -585,6 +588,9 @@ textarea{
 	#skills-div p{
 		font-size: 25px;
 	}
+	#contact{
+		text-align: left;
+	}
 	.carousel li.slide #caption1, #caption2, #caption3{
 		font-size: 16px;
 	}
@@ -627,6 +633,9 @@ textarea{
 		margin-right: auto;
 		position: relative;
 		top: 0;
+	}
+	#contact{
+		text-align: left;
 	}
 	#name h3{
 		font-size: 20px;
