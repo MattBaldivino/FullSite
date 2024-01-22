@@ -58,7 +58,7 @@ import Col from 'react-bootstrap/Col';
 								<h2>My Contacts</h2>
 								<p>Work Email: <a className="contact-links" href="mailto:matt.a.baldivino@gmail.com">matt.a.baldivino@gmail.com</a></p>
 								<p>School Email: <a className="contact-links" href="mailto:mabaldivino@cpp.edu">mabaldivino@cpp.edu</a></p>
-								<p><a className="contact-links" href="https://www.linkedin.com/in/matthew-baldivino123">LinkedIn</a></p>
+								<p>LinkedIn: <a className="contact-links" href="https://www.linkedin.com/in/matthew-baldivino123" target="_blank">Matthew Baldivino</a></p>
 							</div>
 						</Col>
 						{/*<Col xs={12} sm={12} md={6}>
