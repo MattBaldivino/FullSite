@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import screenshot from "./site.png";
 import rover from "./rover.png";
-import mathnasium from "./mathnasium.jpg";
+import aiot from "./aiot.png";
 
 function Slide() {
   return (
@@ -19,8 +19,8 @@ function Slide() {
 				<p id="caption1" className="legend">Developed a full stack site using React, Flask, MySQL, and AWS Lambda to perform sentiment analysis.</p>
 			</div>
 			<div className="carousel-img">
-		    	<a target="_blank" href="https://github.com/MattBaldivino/marketing_project"><img src={mathnasium} /></a>
-				<p id="caption1" className="legend">Mathnasium: Created a program to filter through inactive accounts for a marketing campaign using Python and Pandas.</p>
+		    	<a target="_blank" href="https://aiotlabcpp.github.io/AIoT-Lab/#/"><img src={aiot} /></a>
+				<p id="caption1" className="legend">AIoT Lab: Developed an autonomous driving model with 93% accuracy and performed website maintenance.</p>
 			</div>
    		</Carousel>
 	</div>
